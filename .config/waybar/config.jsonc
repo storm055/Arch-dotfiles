@@ -1,0 +1,111 @@
+{
+  "exclusive": true,
+  "reload_style_on_change": true,
+  "position": "top",
+  "spacing": 0,
+  "height": 27,
+  "margin-top": 2,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "idle_inhibitor",
+    "mpris"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "memory",
+    "cpu",
+    "battery",
+    "custom/bluetooth"
+  ],
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "cursor": true,
+    "format": "{icon}",
+    "format-icons": {
+      "default": "󱗼",
+      "active": "󱗾",
+      "empty": "󱗽",
+      "focused": "󱥸"
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": []
+    }
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰛊",
+      "deactivated": "󰾫"
+    }
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%d/%m/%Y}"
+  },
+
+  "network": {
+    "format-wifi": "󰖩",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "tooltip-format": "{ifname}: {ipaddr}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 muted",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "memory": {
+    "format": "RAM {percentage}%"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%"
+  },
+
+  "custom/bluetooth": {
+  "format": "󰂯",
+  "on-click": "blueman-manager",
+  "tooltip": true,
+  "tooltip-format": "Bluetooth"
+},
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["󰂎", "󰁺", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "{status_icon} {title}",
+    "player-icons": {
+      "default": "▶"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    }
+  }
+}

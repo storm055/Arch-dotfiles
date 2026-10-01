@@ -1,0 +1,3 @@
+elyprismlauncher-bin
+paru
+paru-debug

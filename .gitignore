@@ -1,0 +1,12 @@
+# Secrets
+*.secret
+*.token
+*.key
+*.pem
+.env
+.env.*
+
+# Temporary / backup files
+*.bak
+*.tmp
+*~

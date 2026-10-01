@@ -1,0 +1,14 @@
+mode=drun
+allow_images=true
+image_size=20
+width=450
+height=300
+location=center
+halign=fill
+valign=fill
+filter_rate=100
+allow_markup=true
+no_actions=true
+insensitive=true
+prompt= 
+
